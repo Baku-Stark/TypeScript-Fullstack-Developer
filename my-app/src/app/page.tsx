@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
 
 
-  const peopleAccount : PeopleAccount = new PeopleAccount(1, "Wallace", 10);
+  const peopleAccount : PeopleAccount = new PeopleAccount(1, "Wallace", 10, "wallace@email.com");
   console.log(peopleAccount);
   peopleAccount.deposit();
 
