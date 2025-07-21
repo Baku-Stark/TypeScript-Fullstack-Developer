@@ -44,7 +44,7 @@ export default function Home() {
         linksList.map((link, index) => (
           <button
             key={index}
-            onClick={() => router.push(link.router)}
+            onClick={() => router.push(`${link.router}?name=${peopleAccount.getName()}&company=${companyAccount.getName()}`)}
             className="px-4 py-2 bg-blue-500 text-white rounded m-1"
           >
             {link.name}
